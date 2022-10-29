@@ -1,12 +1,12 @@
 public class TrainingGround {
     public static void main(String[] args) {
-        //Enemy firstEnemy = new Enemy(150);
-        //System.out.println("Enemy health: " + firstEnemy.getHealth() + ".");
-        //Warrior firstWarrior = new Warrior("Stefan");
-        //firstWarrior.attackEnemy(firstEnemy);
-        //Archer secondHero = new Archer("Smith");
-        //secondHero.attackEnemy(firstEnemy);
-        //Mage thirdHero = new Mage("Halk");
-        //thirdHero.attackEnemy(firstEnemy);
+        Zombie firstZombie = new Zombie(100, "Loki");
+        Warrior firstWarrior = new Warrior("Stefan", 100);
+        firstWarrior.attackEnemy(firstZombie);
+        Archer secondHero = new Archer("Smith", 150);
+        secondHero.attackEnemy(firstZombie);
+        Mage thirdHero = new Mage("Halk", 100);
+        thirdHero.attackEnemy(firstZombie);
+        firstZombie.isAliveRes(firstZombie.isAlive());
     }
 }
